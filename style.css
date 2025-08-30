@@ -1,12 +1,45 @@
-img{
-    height: 600px;
-    width: 600px;
+body {
+  font-family: "Arial", sans-serif;
 }
 
-.main{
-    display: flex;
-    
-
-
+h1,
+h2,
+h3 {
+  font-family: "Cinzel", serif;
 }
 
+img {
+  height: 550px;
+  width: 600px;
+}
+
+.main {
+  display: flex;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.summary h3 {
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  gap: 50px;
+  padding: 40px;
+}
+
+/* .skills-section {
+  margin-top: 100px;
+  margin-bottom: 80px;
+} */
