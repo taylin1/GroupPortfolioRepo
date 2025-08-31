@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 200px;
+  font-family: Cinzel;
+  color: #1a1a1a;
+  background-color: #f4f1e8;
+}
+.main {
+  background-color: #ffffff;
+  margin: 0 45px;
+  border-radius: 20px;
+}
+a {
+  text-decoration: none;
+}
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 80px;
+}
+nav .left-side a {
+  color: #1a1a1a;
+  font-size: 25px;
+  font-weight: 200px;
+}
+nav .right-side a {
+  color: #1a1a1a;
+  margin: 0;
+}
+nav .right-side span {
+  margin-left: 5px;
+}
+
+/* Section 1: About me */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 50px 0;
+  gap: 30px;
+}
+
+.about h2 {
+  font-size: 45px;
+}
+.about .image {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+.about .image img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+@media (max-width: 400px) {
+  /* SECTION 1 */
+  .about .bio h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 400px) {
+  .about {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 400px) {
+  /* NAVBAR */
+  nav {
+    padding: 0 15px;
+  }
+  nav .right-side a {
+    font-size: 20px;
+  }
+  nav .right-side span {
+    display: none;
+  }
+  .about {
+    padding: 0 20px;
+  }
+  .about .bio h2 {
+    font-size: 30px;
+  }
+}
+.skills {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+.skills h2 {
+  text-align: center;
+  font-size: 35px;
+}
+.skills p {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.skills .cells {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skills .cells .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.skills .cells .cell img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.hobbies ul {
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+}
+footer {
+  text-align: center;
+  color: gray;
+}
