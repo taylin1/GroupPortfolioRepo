@@ -1,73 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
-    <link rel="stylesheet" href="/Khaya-ux/khaya.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="main">
-      <div class="left">
-        <div class="profile-pic">
-          <img
-            src="/pictures/1709373886357.jpeg"
-            alt="professional faceshot of Khayalethu Dube"
-          />
-        </div>
-        <div class="profile-title">
-          <h1>Khayalethu Dube</h1>
-          <h2>Software developer</h2>
-        </div>
-      </div>
+body {
+  font-family: "Arial", sans-serif;
+  background: #ffffff;
+  color: #111;
+  margin: 0;
+  padding: 0;
+}
 
-      <div class="right">
-        <!-- Summary -->
-        <div class="summary">
-          <h3>Summary:</h3>
-          <p>
-            Curious mind, future builder. I'm chasing two paths at once, the
-            logic of software engineering and the grit of entrepreneurship.
-            Every project here is a step toward that vision: using code to solve
-            problems, and business to turn ideas into movements.
-          </p>
-        </div>
+h1,
+h2,
+h3 {
+  font-family: "Cinzel", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
 
-        <!-- Skills -->
-        <div class="skills-section">
-          <h3>Skills:</h3>
-          <ul>
-            <li>Software Development (Java, Python, SQL)</li>
-            <li>Cloud & Data (Google Cloud, BigQuery, Data Engineering)</li>
-            <li>
-              AI & Cloud Fundamentals (Microsoft AI-900, AZ-900 certified)
-            </li>
-            <li>Database Management & Data Pipelines</li>
-            <li>Problem-Solving & Creative Thinking</li>
-            <li>Entrepreneurship & Brand Building (Founder of Flexiculture)</li>
-          </ul>
-        </div>
+h1 {
+  font-size: 3rem;
+  color: #111;
+}
 
-        <!-- Contact information -->
-        <div class="contact-section">
-          <h3>Contact information</h3>
-          <p>Phone: 0676353176</p>
-          <p>Email: kdube2912@gmail.com</p>
-          <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/khayalethu-dube-5577832b2/"
-              >Khayalethu Dube</a
-            >
-          </p>
-          <p>
-            Github: <a href="https://github.com/Khaya-ux">Khayalethu Dube</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #555;
+  margin-top: 5px;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #bfa14a;
+  margin-bottom: 15px;
+}
+
+img {
+  height: 380px;
+  width: 320px;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.main {
+  display: flex;
+  gap: 80px;
+  padding: 60px 80px;
+  max-width: 1400px;
+  margin: auto;
+  align-items: flex-start;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-title {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 700px;
+}
+
+.summary,
+.skills-section,
+.contact-section {
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+}
+
+.summary p {
+  line-height: 1.8;
+  color: #444;
+  font-size: 1rem;
+}
+
+.skills-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-section li {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+
+.skills-section li::before {
+  content: "—";
+  margin-right: 10px;
+  color: #bfa14a;
+}
+
+.contact-section p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.contact-section a {
+  color: #111;
+  text-decoration: none;
+  border-bottom: 1px solid #bfa14a;
+}
