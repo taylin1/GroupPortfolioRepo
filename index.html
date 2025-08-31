@@ -1,87 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <title>My Portfolio</title>
-   
-    
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bold Studios</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <nav>
-        <div class="left-side">
-            <a href="/">Bongeka Ndlakuse</a>
+  <body>
+    <!--Container holding the background image-->
+    <div class="background-container">
+      <div class="header">
+        <div class="logo">Bold Studios</div>
+        <div>
+          <img src="pictures/logo.png" class="header-logo" />
         </div>
-        <div class="right-side">
-            <a href="https://github.com/StellaNDL/team-portfolio-website " target="_blank" rel="noopener noreferrer">
-                 <i class="fa-brands fa-github"></i>
-                 <span>Github</span>
-               
-            </a>
-
-            <a href="https://www.linkedin.com/in/bongeka-ndlakuse-0001112b3/" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-linkedin"></i>
-                <span>linkedin</span>
-            </a>
-
-           <a href="mailto:bongekandlakuse@gmail.com">
-            <i class="fa-solid fa-envelope"></i>
-            <span>Email</span>
-        </a>
+        <div class="nav">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
         </div>
-    </nav>
-
-    <main class="main">
-        <section class="about">
-            <div class="bio">
-                <h2>Hi, I'm Bongeka👋</h2>
-                <p>I am an aspiring Software Developer with a passion for creating, building and solving problems. I enjoy working with people and have a good sense of humor.I'm still learning and growing and I am excited to see where my passion for tech takes me</p>
-                </div>
-            <div class="image">
-                <a href="https://www.instagram.com/bongeka_ndlakuse?igsh=MTl3emVyNTV4ZDN4OA%3D%3D&utm_source=qr" target="_blank">
-                <img src="img/myimage.JPG" alt="picture of myself">
-                </a>
-                </div>
-    
-        </section>
-
-         <section class="skills">
-            <h2>Skills</h2>
-            <div class="text"> <p>My skills include the following:</p>
-            </div>
-            <div class="cells">
-            <div class="cell">
-                <img src="img/htmllogo.jpeg" alt="html logo">
-                <span>HTML</span>
-            </div>
-             <div class="cell">
-                <img src="img/csslogo.jpeg" alt="css logo">
-                <span>CSS</span>
-            </div>
-            </div>
-            <div>
-                <h2>Hobbies</h2>
-                <p>My Hobbies include:</p>
-                <div class="hobbies">
-                <ul>
-                    <li>
-                        Travelling
-                    </li>
-                    <li>
-                        Cooking
-                    </li>
-                    <li>
-                        Reading
-                    </li>
-                </ul>
-                </div>
-            </div>
-         </section>
-         <footer>This was coded by Bongeka Ndlakuse</footer>
-    </main>
-</body>
+      </div>
+      <!--About-->
+      <div class="hero">
+        <h1>Turning your dream website into a reality</h1>
+        <p class="About">
+          At Bold Studios, we specialize in crafting modern, creative, and
+          user-friendly websites that bring your ideas to life.
+        </p>
+      </div>
+      <!--Services-->
+      <div class="services">
+        <h2>Our Services</h2>
+        <h4><b>Website Design | Development | Branding</b></h4>
+      </div>
+      <!--Team-->
+      <div class="team">
+        <h2 class="meet">Meet the Team</h2>
+        <div class="team-members">
+          <div class="team-member">
+            <img src="pictures/portfoliopic.jpg" />
+            <!--Link html individual page here-->
+            <a href="aboutMe.html" target="_blank"
+              ><p class="text-edit">Taylin</p>
+            </a>
+          </div>
+          <div class="team-member">
+            <img src="/pictures/khaya.jpeg" />
+            <!--Link html individual page here-->
+            <a href="" target="_blank"> <p class="text-edit">Khaya</p> </a>
+          </div>
+          <div class="team-member">
+            <img src="pictures/Bongeka.png" />
+            <!--Link html individual page here-->
+            <a href="" target="_blank"> <p class="text-edit">Bongeka</p> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
