@@ -1,0 +1,105 @@
+body
+{
+font-family:"Cinzel";  
+background: #fff;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+    text-decoration: underline;
+   
+}
+
+.Header
+{
+   background-image: url("plant.jpg");
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: repeat;
+    height: 80px;
+    padding: 20px;
+}
+ .container {
+    padding: 20px;
+    }
+
+    .aboutMe-content
+    {
+     display:flex;
+     align-items: center;
+     justify-content: space-between;
+     position:relative;
+     height:350px;
+     width: 100%;
+     background:#f6d992;
+     flex-wrap: wrap;
+    }
+
+    .text-box 
+    {
+    border:2px outset black;
+    border-width: 5px;
+    max-width: 30%;
+    position:absolute;
+    left:40%;
+    padding:20px;
+    }
+
+    .my-img 
+    {
+      width: 250px;
+      position: absolute;   /* allows overlap */
+      top: -30px;            /* adjust vertical */
+      left:  80px;           /* adjust horizontal */
+      z-index: 2;           /* makes sure it’s on top */
+    }
+
+  
+
+  .hobbies-content {
+  display: flex;
+  justify-content: space-between; /* spaces items out */
+  align-items: flex-start; /* align to top */
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
+  gap: 20px; /* spacing between items */
+}
+
+
+.list-box,
+.contact-box {
+  flex: 25%; /* make them flexible but ~25% wide */
+  padding: 20px;
+  margin-top: 20px;
+  border: 5px outset black;
+  box-sizing: border-box;
+}
+
+
+.port-img {
+  margin-top: 20px;
+  width: 470px; 
+}
+
+
+.footer-box
+{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color:#f6d992;
+  width:auto;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .aboutMe-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+    
+ 
+
+  
