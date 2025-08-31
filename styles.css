@@ -75,9 +75,16 @@ body {
 }
 
 .team-member {
-  border: 2px outset rgb(238, 173, 88);
-  border-width: thick;
-  width: 150px;
+
+    border: 5px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, rgb(255, 60, 0), #f09819);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.3);
+    max-width: 120px; 
+    background-color: black;
+    transition: all ease-out;
 }
 
 .team-member img {
@@ -101,6 +108,24 @@ p {
 
 .text-edit {
   font-size: 35px;
-  font-weight: bold;
+  font-weight: bold;  
+}
+
+.link-up
+{
+ text-decoration: none;
+ display: block;
+ color: white;
+}
+
+.button
+{
+  background: linear-gradient(to right, rgb(81, 80, 80), black);
   color: white;
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(110, 13, 208, 0.4);
+  cursor: pointer;
 }
